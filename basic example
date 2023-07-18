@@ -1,0 +1,18 @@
+$ git clone https://github.com/mejackreed/Leaflet-IIIF.git
+$ npm install
+$ npm start
+$ npm test
+
+var map = L.map('map', {
+  center: [0, 0],
+  crs: L.CRS.Simple,
+  zoom: 0,
+});
+
+L.tileLayer.iiif('https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json').addTo(map);
+
+
+
+
+
+
